@@ -8,8 +8,15 @@ In this project, the DP is implemented for solving two sequencing problems. The 
 
 The second problem is one variant of a One-Unit Multiproduct Production Scheduling problem (see subfolder DP_GPU_PROD_SCHED)). The description can be found at http://math.nsc.ru/AP/benchmarks/MSP/msp.html.
 
-The code was compiled with MS Visual Studio Express 2008 and tested on GTS 450 device with 1Gb of GDDR5 memory. The solvable sizes and the running time for the TSP is the following.
-N=25, time=1.5 sec.
+The code was compiled with MS Visual Studio Express 2008 with CUDA libraries and tested on GTS 450 device with 1Gb of GDDR5 memory. The solvable sizes and the running time for the TSP are the following.
+
+N=23, time=0,33 sec., GPU memory = 250M
+
+N=24, time=0.75 sec.  GPU memory = 500M
+
+N=25, time=1.56 sec.  GPU memory = 1GB
+
+For solving larger instances, a GPU with more memory is required.
 
 The code can be used as a subroutine in exact of heuristic algorithms. The following paper desribes a Branch and Bound algorithm for the Multi-Unit Production Scheduling problem.
 
