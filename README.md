@@ -4,13 +4,11 @@ This is an implementation of the Dynamic Programming (DP) algorithm for the Grap
 M. Held  and R.M.Karp,. A dynamic programming approach to sequencing problems, Journal of the Society for Industrial and Applied Mathematics 10: 1962.  pp. 196--210.
 DOI: https://doi.org/10.1145/800029.808532
 
-In this project, the DP is implemented for solving two sequencing problems. The first one is the well known Traveling Salesman Problem (TSP, see subfolder DP_GPU_TSP). 
-
-The second problem is one variant of a One-Unit Multiproduct Production Scheduling problem (see subfolder DP_GPU_PROD_SCHED)). The description can be found at http://math.nsc.ru/AP/benchmarks/MSP/msp.html.
+In this project, the DP is implemented for solving the Travelling Salesman Problem (TSP). 
 
 The code was compiled with MS Visual Studio Express 2008 with CUDA libraries and tested on GTS 450 device with 1Gb of GDDR5 memory. The solvable sizes and the running time for the TSP are the following.
 
-N=23, time=0,33 sec., GPU memory = 250M
+N=23, time=0,33 sec.  GPU memory = 250M
 
 N=24, time=0.75 sec.  GPU memory = 500M
 
